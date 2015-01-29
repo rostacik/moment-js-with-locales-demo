@@ -1,4 +1,4 @@
-# [momentjs](http://momentjs.com/ "momentjs") demo to showcase problem with localized names of months and days #
+﻿# [momentjs](http://momentjs.com/ "momentjs") demo to showcase problem with localized names of months and days #
 
 ----------
 
@@ -39,6 +39,6 @@ So essentially there are 3 ways how can we make momentjs with locale versions of
 3. use original file with content header just set to application/javascript but set charset="utf-8" in script tag.
 
 # hosted files #
-You can also play with this project hosted here : [loc.rostacik.net](loc.rostacik.net)
+You can also play with this project hosted here : [loc.rostacik.net](http://loc.rostacik.net)
 
 Dušan
