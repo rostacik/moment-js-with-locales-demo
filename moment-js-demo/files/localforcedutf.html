@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>moment</title>
+</head>
+<body>
+    <div id="content">
+        script loaded from moment-with-locales.js but forced utf-8 on the script tag
+        <br />
+        <br />
+        <button id="clickme">click me to test moment.js</button>
+    </div>
+    <script src="moment-with-locales-orig.js" charset="utf-8"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('clickme').addEventListener('click', function () {
+                moment.locale('sk');
+                alert(moment("6-25-1995", "MM-DD-YYYY").format('dddd, MMMM Do YYYY, h:mm:ss'));
+            }, false);
+        });
+    </script>
+</body>
+</html>

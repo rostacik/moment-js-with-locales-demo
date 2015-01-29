@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>root page</title>
+</head>
+    <body>
+        <b>demo page to show problem with localized names of days and months (since I am from Slovakia, I used our Slovak locale for demo purposes)</b>
+        <br />
+        <br />
+        <br />
+        <a href="localoriginalfile.html">localoriginalfile.html</a> - original file loaded locally with simple script tag - not working
+        <br />
+        <br />
+        <a href="remotefile.html">remotefile.html</a> - file loaded from GitHub servers - working since server explicitly states in response headers : Content-Type:application/javascript; charset=utf-8
+        <br />
+        <br />
+        <a href="localconvertedfile.html">localconvertedfile.html</a> - file converted to UTF8 with BOM - in VS2013 you will see this in File > Advanced Save Options.... UTF8 with signature
+        <br />
+        <br />
+        <a href="localforcedutf.html">localforcedutf.html</a> - not converted file but with force to use specified charset in script tag
+    </body>
+</html>
