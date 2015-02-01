@@ -2,7 +2,7 @@
 
 ----------
 
-All pages use same snippet of JavaScript bound to onclick of a button:
+All pages use the very same snippet of JavaScript bound to click of a button:
 
 ```javascript
 moment.locale('sk');
@@ -36,7 +36,7 @@ and **JS files** :
 # making it work #
 So essentially there are 3 ways how can we make momentjs with locale versions of names work :
 
-1. use **response header Content-Type	set to :application/javascript; charset=utf-8** (usually this is just application/javascript),
+1. use **response header Content-Type set to : `application/javascript; charset=utf-8`** (usually this is just application/javascript),
 2. convert **momentjs** to **UTF8 with BOM**,
 3. use original file with content header just set to application/javascript but **set charset="utf-8" in script tag**.
 
