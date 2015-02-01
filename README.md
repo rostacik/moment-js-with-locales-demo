@@ -21,10 +21,12 @@ The problem lies in encoding of received .js file and I will elaborate a bit her
 This demo consists of **following HTML files** :
 
 - **index.html** - root page with links to each demo page,
+- **indexcdn.html** - moment js with locale loaded from cdnjs with simple script tag (locale in JS are malformed),
+- **indexcdwithcharset.html** - the same file, but script tag is enforcing charset to be utf-8 (locale in JS file are all OK),
 - **localconvertedfile.html** - using local moment-with-locales-with-signature.js that has been converted to UTF8 with BOM (by me in Notepad++),
 - **localforcedutf.html** - using original moment-with-locales-orig.js but with property charset="utf-8" in script tag,
 - **localoriginalfile.html** - using original moment-with-locales-orig.js - the very same was as momentjs has in their docs : [browser script tag link](http://momentjs.com/docs/#/use-it/browser/),
-- remotefile.html - loading hosted momentjs file with Content-Type:application/javascript; charset=utf-8 headers.
+- **remotefile.html** - loading hosted momentjs file with Content-Type:application/javascript; charset=utf-8 headers.
 
 and **JS files** :
 

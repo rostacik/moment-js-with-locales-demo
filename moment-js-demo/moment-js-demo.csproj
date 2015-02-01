@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="files\index.html" />
+    <Content Include="files\indexcdwithcharset.html" />
+    <Content Include="files\indexcdn.html" />
     <Content Include="files\localconvertedfile.html" />
     <Content Include="files\localforcedutf.html" />
     <Content Include="files\localoriginalfile.html" />
